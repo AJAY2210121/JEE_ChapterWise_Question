@@ -11,15 +11,15 @@ const statusColors = {
   completed: 'bg-green-500',
 };
 
-export function ChapterCard({ chapter }: { chapter: any }) {
-  // const totalQuestions = Object.values(chapter.yearWiseQuestionCount).reduce((a: number, b: number) => a + b, 0);
-  const progress = (chapter.questionSolved / totalQuestions) * 100;
+// export function ChapterCard({ chapter }: { chapter: any }) {
+//   const totalQuestions = Object.values(chapter.yearWiseQuestionCount).reduce((a: number, b: number) => a + b, 0);
+//   const progress = (chapter.questionSolved / totalQuestions) * 100;
 
-  const latestYear = 2025;
-  const previousYear = 2024;
-  const latestYearQuestions = chapter.yearWiseQuestionCount[latestYear];
-  const previousYearQuestions = chapter.yearWiseQuestionCount[previousYear];
-  const trend = latestYearQuestions > previousYearQuestions ? 'up' : 'down';
+//   const latestYear = 2025;
+//   const previousYear = 2024;
+//   const latestYearQuestions = chapter.yearWiseQuestionCount[latestYear];
+//   const previousYearQuestions = chapter.yearWiseQuestionCount[previousYear];
+//   const trend = latestYearQuestions > previousYearQuestions ? 'up' : 'down';
 
   return (
     <Card className="transition-all duration-300 hover:shadow-lg">
