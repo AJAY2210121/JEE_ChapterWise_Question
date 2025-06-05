@@ -12,7 +12,7 @@ const statusColors = {
 };
 
 export function ChapterCard({ chapter }: { chapter: any }) {
-  const totalQuestions = Object.values(chapter.yearWiseQuestionCount).reduce((a: number, b: number) => a + b, 0);
+  // const totalQuestions = Object.values(chapter.yearWiseQuestionCount).reduce((a: number, b: number) => a + b, 0);
   const progress = (chapter.questionSolved / totalQuestions) * 100;
 
   const latestYear = 2025;
